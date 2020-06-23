@@ -1,0 +1,21 @@
+{
+  "name": "suhas-url-shortener",
+  "version": "1.0.0",
+  "description": "My personal URL shortner.",
+  "dependencies": {
+    "atob": "^2.0.3",
+    "body-parser": "^1.15.2",
+    "btoa": "^1.1.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.10.2",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.20"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "4.8.4"
+  }
+}

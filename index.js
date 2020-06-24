@@ -39,8 +39,7 @@ var Counter = mongoose.model('Counter', countersSchema);
 // URL Collection Schema
 var urlSchema = new mongoose.Schema({
     _id: {type: String},
-    url: '',
-    created_at: ''
+    url: ''
 });
 
 var URL = mongoose.model('URL', urlSchema);

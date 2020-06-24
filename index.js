@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({
 
 // Base route for front-end
 app.get('/', function(req, res) {
+    console.log("new get");
     res.sendFile('views/index.html', {
         root: __dirname
     });

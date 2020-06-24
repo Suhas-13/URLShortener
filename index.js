@@ -6,7 +6,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
     promise,
     connectionString = "mongodb://127.0.0.1:27017",
-    port = process.env.PORT || 80;
+    port = 5000;
 var sanitize = require('mongo-sanitize');
 
 // ExpressJS server start

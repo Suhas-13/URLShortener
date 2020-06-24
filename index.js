@@ -3,8 +3,6 @@ var express = require('express'),
     app = express(),
     http = require('http').Server(app),
     mongoose = require('mongoose'),
-    btoa = require('btoa'),
-    atob = require('atob'),
     promise,
     connectionString = "mongodb://127.0.0.1:27017",
     port = process.env.PORT || 80;
@@ -28,13 +26,7 @@ app.get('/', function(req, res) {
     });
 });
 
-// Counter Collection Schema
-var countersSchema = new mongoose.Schema({
-    _id: { type: String, required: true },
-    count: { type: Number, default: 0 }
-});
 
-var Counter = mongoose.model('Counter', countersSchema);
 
 // URL Collection Schema
 var urlSchema = new mongoose.Schema({

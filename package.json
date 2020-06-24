@@ -14,7 +14,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodejs index.js"
   },
   "engines": {
     "node": "4.8.4"

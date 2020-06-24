@@ -6,7 +6,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
     promise,
     connectionString = "mongodb://127.0.0.1:27017",
-    port = 5000;
+    port = 3000;
 var sanitize = require('mongo-sanitize');
 
 // ExpressJS server start
@@ -72,6 +72,7 @@ app.get('/:hash', function(req, res) {
 
 // API for shortening
 app.post('/shorten', function(req, res, next) {
+    console.log('trying to shorten')
     var urlData = req.body.url;
     var hash = req.body.hash;
     URL.findOne({_id: hash}, function(err, doc) {

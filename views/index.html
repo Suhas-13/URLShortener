@@ -40,7 +40,7 @@
                     var hash = $.trim($('.text-hash').val());
                     console.log(url);
                     $.ajax({
-                        url: 'http://192.207.255.69/shorten:5000',
+                        url: '/shorten',
                         type: 'POST',
                         data: {
                             url: url,

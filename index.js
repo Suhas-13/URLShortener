@@ -74,6 +74,7 @@ app.get('/:hash', function(req, res) {
 // API for shortening
 app.post('/shorten', function(req, res, next) {
     var urlData = req.body.url;
+    console.log(req.body);
     var hash = req.body.hash;
     console.log(hash);
     URL.findOne({_id: hash}, function(err, doc) {
